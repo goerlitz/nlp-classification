@@ -1,0 +1,8 @@
+# data wrangling
+pandas
+jupyter
+jupyterlab
+tqdm
+
+# visual
+matplotlib
