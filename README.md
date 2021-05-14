@@ -9,15 +9,34 @@ Typical Use Cases:
 * Sentiment Classification
 * Document Labeling
 
-This repository specifically focuses on Classification of German texts using Deep Learning.
+This repository focuses on classification of German texts using state-of-the-art deep learning models.
 
 ## Datasets:
 
-* [10k German News Articles](notebooks/10kGNAD/README.md) from Austrian newspaper "DER STANDARD"
+* [10k German News Articles](notebooks/10kGNAD/README.md) from Austrian newspaper "DER STANDARD" (9 categories)
+
+## German Language Models
+
+The basis for the text classification are Transformer *Language Models* which were pre-trained on a corpus of German texts. All of following models are available through the [Hugging Face model library](https://huggingface.co/models).
+
+* [bert-base-german-cased](https://huggingface.co/bert-base-german-cased)
+* dbmdz/bert-base-german-cased
+* dbmdz/bert-base-german-uncased
+* dbmdz/distilbert-base-german-europeana-cased
+* distilbert-base-german-cased
+* deepset/gbert-base
+* deepset/gbert-large
+* deepset/gelectra-base
+* deepset/gelectra-large
+* german-nlp-group/electra-base-german-uncased
 
 ## Experiments
 
-There are different factors which influence the performance of the text classification. It is necessary to runn different experiments to find a setup which gives the best results.
+Many different factors influcence the performance of a NLP model, e.g. from the quality of the training data to the choice of hyperparameters for model tuning. Following we will establish a baseline and then run additional experiements to futher improve the classification accuracy.
+
+### Baseline
+
+Transfer learning with a pre-trained Transformers model, using SimpleTranformers with a default Classification head, on the [10k German News Articles](notebooks/10kGNAD/README.md) dataset.
 
 ### Preparation of Training Data
 
