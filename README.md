@@ -14,21 +14,29 @@ This repository focuses on classification of German texts using state-of-the-art
 ## Datasets:
 
 * [10k German News Articles](notebooks/10kGNAD/README.md) from Austrian newspaper "DER STANDARD" (9 categories)
+* [GermEval18 Sentiments](https://github.com/uds-lsv/GermEval-2018-Data)
 
 ## German Language Models
 
-The basis for the text classification are Transformer *Language Models* which were pre-trained on a corpus of German texts. All of following models are available through the [Hugging Face model library](https://huggingface.co/models).
+The basis for the text classification are Transformer *Language Models* which were pre-trained on a corpus of German texts. All of following models are available through the [Hugging Face model hub](https://huggingface.co/models).
 
-* [bert-base-german-cased](https://huggingface.co/bert-base-german-cased)
-* dbmdz/bert-base-german-cased
-* dbmdz/bert-base-german-uncased
-* dbmdz/distilbert-base-german-europeana-cased
-* distilbert-base-german-cased
-* deepset/gbert-base
-* deepset/gbert-large
-* deepset/gelectra-base
-* deepset/gelectra-large
-* german-nlp-group/electra-base-german-uncased
+**BERT:**
+* [bert-base-german-cased](https://huggingface.co/bert-base-german-cased) by Deepset.ai, Jun 2019 - Wiki, OpenLegalData, News (~ 12GB)
+* [dbmdz/bert-base-german-cased](https://huggingface.co/dbmdz/bert-base-german-cased) by MDZ Digital Library, Oct 2019 (~ 16GB)
+* [dbmdz/bert-base-german-uncased](https://huggingface.co/dbmdz/bert-base-german-uncased) by MDZ Digital Library, Oct 2019 (~ 16GB)
+* [dbmdz/bert-base-german-europeana-cased](https://huggingface.co/dbmdz/bert-base-german-europeana-cased) by MDZ Digital Library - Europeana newspapers (~ 51GB)
+* [dbmdz/bert-base-german-europeana-uncased](https://huggingface.co/dbmdz/bert-base-german-europeana-uncased) by MDZ Digital Library - Europeana newspapers (~ 51GB)
+* **SOTA**: [deepset/gbert-base](https://huggingface.co/deepset/gbert-base) by Deepset.ai + dbmdz, Oct 2020
+* [deepset/gbert-large](https://huggingface.co/deepset/gbert-large) by Deepset.ai + dbmdz, Oct 2020
+
+**DistilBERT:**
+* [distilbert-base-german-cased](https://huggingface.co/distilbert-base-german-cased)
+* [dbmdz/distilbert-base-german-europeana-cased](https://huggingface.co/dbmdz/distilbert-base-german-europeana-cased) by MDZ Digital Library - Europeana newspapers (~ 51GB)
+
+**Electra:**
+* [deepset/gelectra-base](https://huggingface.co/deepset/gelectra-base) by Deepset.ai + dbmdz, Oct 2020
+* **SOTA**: [deepset/gelectra-large](https://huggingface.co/deepset/gelectra-large) by Deepset.ai + dbmdz, Oct 2020
+* [german-nlp-group/electra-base-german-uncased](https://huggingface.co/german-nlp-group/electra-base-german-uncased) by T-Systems + amberoad, Aug 2020
 
 ## Experiments
 
