@@ -43,7 +43,7 @@ foo@bar:~$ jupyter lab
 
 * Train classifier on a Pre-trained German BERT Language Model
 * Train classifier on a Pre-trained German FastAI Language Model
-* Analyse classifier performance
+* Analyse classifier performance ([Notebook](22_performance_analysis.ipynb))
 
 ### 3. Comparison of Transformer Models
 
