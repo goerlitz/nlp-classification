@@ -37,12 +37,21 @@ foo@bar:~$ jupyter lab
   * Names and distribution of categories
 * Clustering of Articles (TODO)
 
-### 2. Baseline Classification Model with Transfer Learning
+### 2. Baseline: Transfer Learning with pre-trained Germany Language Model
 
 **Goal:** Create a baseline text classifier using a pre-trained German Language Model (from Hugging Face model hub).
 
+#### Part I
+
+* Understand how Transformer Tokenizers work ([Notebook](colab/20_transformer_tokenization.ipynb))
+
+#### Part II
+
 * Train classifier on a Pre-trained German BERT Language Model
 * Train classifier on a Pre-trained German FastAI Language Model
+
+#### Part III
+
 * Analyse classifier performance ([Notebook](22_performance_analysis.ipynb))
 
 ### 3. Comparison of Transformer Models
