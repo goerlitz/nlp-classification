@@ -1,12 +1,12 @@
 # NLP Classification
 
-*Text Classification* or *Text Categorization* (or *Document Classification*) is the process of analyzing natural language texts and labeling them with a predefined set of categories in order to make it easier to manage them.
+*Text Classification* (or *Text Categorization*, *Document Classification*) is the process of analyzing natural language texts and labeling them with a predefined set of categories in order to make it easier to manage them.
 
-Typical Use Cases:
+Typical use cases are
 
 * Spam Classification
 * Support Ticket Classification
-* Sentiment Classification
+* Sentiment Analysis
 * Document Labeling
 
 This repository focuses on classification of German texts using state-of-the-art deep learning models.
@@ -14,11 +14,11 @@ This repository focuses on classification of German texts using state-of-the-art
 ## Datasets:
 
 * [10k German News Articles](notebooks/10kGNAD/README.md) from Austrian newspaper "DER STANDARD" (9 categories)
-* [GermEval18 Sentiments](https://github.com/uds-lsv/GermEval-2018-Data)
+* [GermEval18 Sentiments](https://github.com/uds-lsv/GermEval-2018-Data) (coarse and fine)
 
 ## German Language Models
 
-The basis for the text classification are Transformer *Language Models* which were pre-trained on a corpus of German texts. All of following models are available through the [Hugging Face model hub](https://huggingface.co/models).
+The basis for the text classification are Transformer *Language Models* which were pre-trained on a corpus of German texts. All of following German language models are available through the [Hugging Face model hub](https://huggingface.co/models).
 
 **BERT:**
 * [bert-base-german-cased](https://huggingface.co/bert-base-german-cased) by Deepset.ai, Jun 2019 - Wiki, OpenLegalData, News (~ 12GB)
