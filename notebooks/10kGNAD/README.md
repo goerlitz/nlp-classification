@@ -41,13 +41,15 @@ foo@bar:~$ jupyter lab
 
 **Goal:** Create a baseline text classifier using a pre-trained German Language Model (from Hugging Face model hub).
 
-#### Part I
+#### Part I - BERT Basics
 
-* Understand how Transformer Tokenizers work ([Notebook](colab/20_transformer_tokenization.ipynb))
+* Compare tokenization of different pretrained German Transformer models ([Notebook](colab/20_transformer_tokenization.ipynb))
+* Train a topic classifier with a default SimpleTransformers setup (pretrained German BERT model) ([Notebook](colab/21_default_simpletransformer_classifier.ipynb))
+* Train a topic classifier with a default Hugginface Transformer setup (pretrained German BERT model) ([Notebook](colab/22_default_huggingface_classifier.ipynb))
+* Train a topic classifier with a default Farm Transformer setup (pretrained German BERT model) ([Notebook](colab/22_default_farm_classifier.ipynb))
 
-#### Part II
+#### Part II - FastAI
 
-* Train classifier on a Pre-trained German BERT Language Model
 * Train classifier on a Pre-trained German FastAI Language Model
 
 #### Part III
@@ -56,7 +58,6 @@ foo@bar:~$ jupyter lab
 
 ### 3. Comparison of Transformer Models
 
-* Compare tokenization of German texts
 * Compare performance of different pretrained Models
 
 ### 4. Hyperparameter Tuning
