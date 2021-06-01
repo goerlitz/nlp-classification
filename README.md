@@ -1,5 +1,12 @@
 # NLP Classification
 
+<div align="center">
+  <img src="amador-loureiro-BVyNlchWqzs-unsplash.jpg"><br>
+  <span>Photo by <a href="https://unsplash.com/@amadorloureiroblanco?utm_medium=referral&utm_campaign=photographer-credit">Amador Loureiro</a> on Unsplash</span><br>
+</div>
+
+## About
+
 *Text Classification* (or *Text Categorization*, *Document Classification*) is the process of analyzing natural language texts and labeling them with a predefined set of categories in order to make it easier to manage them.
 
 Typical use cases are
@@ -11,7 +18,7 @@ Typical use cases are
 
 This repository focuses on classification of German texts using state-of-the-art deep learning models.
 
-## Datasets:
+## Datasets
 
 * [10k German News Articles](notebooks/10kGNAD/README.md) from Austrian newspaper "DER STANDARD" (9 categories)
 * [GermEval18 Sentiments](https://github.com/uds-lsv/GermEval-2018-Data) (coarse and fine)
