@@ -37,28 +37,52 @@ foo@bar:~$ jupyter lab
   * Names and distribution of categories
 * Clustering of Articles (TODO)
 
-### 2. Baseline: Transfer Learning with pre-trained Germany Language Model
 
-**Goal:** Create a baseline text classifier using a pre-trained German Language Model (from Hugging Face model hub).
+### 2. Training a Basic Text Classifier with Transfer Learning
 
-#### Part I - BERT Basics
+**Goal:** Use a state-of-the-art transfer learning approach to train a baseline classifier.
+
+Use a pre-trained German Language Model from Hugging Face model hub with default model parameters to make it simple. More model tuning can be done later.
+
+#### 2.1. Text Tokenization with pretrained German transformer models
 
 * Compare tokenization of different pretrained German Transformer models ([Notebook](colab/20_transformer_tokenization.ipynb))
+
+#### 2.2. Bert/DistilBert with SimpleTransformers
+
+The SimpleTransformers library makes it easy to implement and train a transformer model in a few lines of code.
+
 * Train a topic classifier with a default SimpleTransformers setup (pretrained German BERT model) ([Notebook](colab/21_default_simpletransformer_classifier.ipynb))
-* Train a topic classifier with a default Hugginface Transformer setup (pretrained German BERT model) ([Notebook](colab/22_default_huggingface_classifier.ipynb))
+
+#### 2.3. Bert/DistilBert with Farm
+
+Farm is another library that simplifies training of tranformers models by wrapping setup details of the Tranformers library.
+
 * Train a topic classifier with a default Farm Transformer setup (pretrained German BERT model) ([Notebook](colab/22_default_farm_classifier.ipynb))
 
-#### Part II - FastAI
+#### 2.4. Bert/DistilBert with Tranformers
+
+* Train a topic classifier with a default Hugginface Transformer setup (pretrained German BERT model) ([Notebook](colab/23_default_huggingface_classifier.ipynb))
+
+#### 2.5. Extra: ULMFit with FastAI
 
 * Train classifier on a Pre-trained German FastAI Language Model
+* 
 
-#### Part III
+### 3. Comparison of Model Performance
 
-* Analyse classifier performance ([Notebook](22_performance_analysis.ipynb))
+**Goal:** Compare the performance of the text classifier (down stream task) when using different pretrained German Language Models and training parameters.
 
-### 3. Comparison of Transformer Models
+#### 3.1. Compare pretrained Models
 
-* Compare performance of different pretrained Models
+BERT vs. DistilBERT vs. Electra
+
+#### 3.2. Compare effects of training parameters
+
+* learning rate
+* epochs
+* batch size
+
 
 ### 4. Hyperparameter Tuning
 
