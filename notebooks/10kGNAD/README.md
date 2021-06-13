@@ -52,29 +52,32 @@ Using ...
 * Compare tokenization of different pretrained German Transformer models ([Notebook](colab/20_transformer_tokenization.ipynb))
 
 
-### Using SimpleTransformers
+### 1. Using SimpleTransformers
 
 SimpleTransformers is an great library which wraps around the excellent HuggingFace Transformer implementation and makes it very easy to train state-of-the-art NLP Models with just a few lines of code. Moreover, it directly integrated with Weights & Biases for evaluation of model performance.
 
-Steps:
-1. Train a basic topic classifier based on a pretrained German DistilBert language model using the sensible default settings of SimpleTransformers. ([Notebook](colab/21_default_simpletransformer_classifier.ipynb))
-3. Use hyperparameter optimization to improve the model performance.
-4. Use advanced hyperparameter optimization to further improve the model performance.
+#### PART I: DistilBERT
+
+DistilBERT models are smaller and faster than BERT models. Thus it is the ideal model to use for quick experimentation with training parameters.
+
+1. Train a basic topic classifier based on a pretrained German DistilBert language model using the sensible default settings of SimpleTransformers. ([Notebook](colab/21_10kGNAD_simpletransformers_default_distilbert.ipynb))
+3. Using hyperparameter optimization to improve the model performance. ([Notebook](colab/22_10kGNAD_simpletransformers_hyperparam_distilbert.ipynb))
+4. Using advanced hyperparameter optimization to further improve the model performance. ([Notebook](colab/23_10kGNAD_simpletransformers_advanced_hyperparam_distilbert.ipynb))
 
 
-### Comparing Different Pretrained German Transformer Models
+#### PART II: Comparing Different Pretrained German Transformer Models
 
-* Use different pretrained German Language Models and compare their performance.
+* Using different pretrained German Language Models and compare their performance.
 
 
-### Using Farm
+### 2. Using Farm
 
 Farm is another library that simplifies training of Transformer models by wrapping setup details of the Hugginface Transformer library.
 
 * Train a topic classifier with a default Farm Transformer setup (pretrained German BERT model) ([Notebook](colab/22_default_farm_classifier.ipynb))
 
 
-### Using HuggingFace
+### 3. Using Vanilla HuggingFace
 
 * Train a topic classifier with a default Hugginface Transformer setup (pretrained German BERT model) ([Notebook](colab/23_default_huggingface_classifier.ipynb))
 
