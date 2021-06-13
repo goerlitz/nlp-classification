@@ -64,6 +64,10 @@ DistilBERT models are smaller and faster than BERT models. Thus it is the ideal 
 3. Using hyperparameter optimization to improve the model performance. ([Notebook](colab/22_10kGNAD_simpletransformers_hyperparam_distilbert.ipynb))
 4. Using advanced hyperparameter optimization to further improve the model performance. ([Notebook](colab/23_10kGNAD_simpletransformers_advanced_hyperparam_distilbert.ipynb))
 
+<div align="center">
+  <img src="images/simpletransformers_distilbert_default.png"><br>
+</div>
+
 
 #### PART II: Comparing Different Pretrained German Transformer Models
 
