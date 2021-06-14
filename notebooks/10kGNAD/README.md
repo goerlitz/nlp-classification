@@ -71,8 +71,12 @@ DistilBERT models are smaller and faster than BERT models. Thus it is the ideal 
 
 #### PART II: Comparing Different Pretrained German Transformer Models
 
-* Using different pretrained German Language Models and compare their performance.
+* Using different pretrained German Language Models and compare their performance. ([Notebook](colab/24_10kGNAD_simpletransformers_compare_pretrained_models.ipynb))
 
+
+#### PART III: BERT
+
+1. Train a basic topic classifier based on a pretrained German Bert language model using the sensible default settings of SimpleTransformers. ([Notebook](colab/25_10kGNAD_simpletransformers_default_bert.ipynb))
 
 ### 2. Using Farm
 
