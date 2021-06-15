@@ -65,10 +65,10 @@ DistilBERT models are smaller and faster than BERT models. Thus it is the ideal 
 4. Using advanced hyperparameter optimization to further improve the model performance. ([Notebook](colab/23_10kGNAD_simpletransformers_advanced_hyperparam_distilbert.ipynb))
 
 <div align="center">
-  <img src="images/10kGNAD_simpletrans_distilbert-base-german.png"><br>
-  <span><a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_base">Training runs with default SimpleTransformers settings and pretrained DistilBERT model.</a></span>
-  <img src="images/10kGNAD_simpletrans_gbert-base.png"><br>
-  <span><a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_bert_default">Training runs with default SimpleTransformers settings and pretrained BERT model.</a></span>
+  <img src="images/10kGNAD_simpletrans_distilbert-base-german.png" width="800"><br>
+  <span><a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_base">Training runs with default SimpleTransformers settings and pretrained DistilBERT model.</a></span><br><br>
+  <img src="images/10kGNAD_simpletrans_gbert-base.png" width="800"><br>
+  <span><a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_bert_default">Training runs with default SimpleTransformers settings and pretrained BERT model.</a></span><br>
 </div>
 
 
