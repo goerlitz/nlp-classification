@@ -12,6 +12,18 @@
 We will be using the [Ten Thousand German Newspaper Article Dataset](https://tblock.github.io/10kGNAD/) (10kGNAD). It contains 10,273 German-language news articles, which are categorized into 9 topics. The source of the news articles is the [One Million Posts Corpus](https://ofai.github.io/million-post-corpus/) which mainly focuses on user comments posted on the Austrian newspaper website [DER STANDARD](http://derstandard.at/). But it also includes the original news arcticles along with some meta data. Fortunately, all articles have been extracted, cleaned and prepared for text classification in the [10kGNAD respository](https://github.com/tblock/10kGNAD) on Github.
 
 
+### Requirements
+
+* [Huggingface Transformers](https://huggingface.co/transformers/) implementation
+* [SimpleTransformers](https://simpletransformers.ai/) library
+* [Google Colab](https://colab.research.google.com/) or other compute instance with GPU support
+* [Weights & Biases](https://wandb.ai/) for experiment tracking
+
+### References
+
+* https://towardsdatascience.com/hyperparameter-optimization-for-optimum-transformer-models-b95a32b70949
+
+
 ### Quick Setup
 
 1. Create Virtual Environment
@@ -56,30 +68,52 @@ Using ...
 
 SimpleTransformers is an great library which wraps around the excellent HuggingFace Transformer implementation and makes it very easy to train state-of-the-art NLP Models with just a few lines of code. Moreover, it directly integrated with Weights & Biases for evaluation of model performance.
 
-#### PART I: DistilBERT
+#### PART I: SimpleTransformers with Default Settings
 
-DistilBERT models are smaller and faster than BERT models. Thus it is the ideal model to use for quick experimentation with training parameters.
+The SimpleTransformers implementation comes with sensible default settings for hyperparameters like *learning rate*. Hence, we can quickly implement and train a classifier with good performance without the need to search for recommended parameter settings for each used model.
 
-1. Train a basic topic classifier based on a pretrained German DistilBert language model using the sensible default settings of SimpleTransformers. ([Notebook](colab/21_10kGNAD_simpletransformers_default_distilbert.ipynb))
-3. Using hyperparameter optimization to improve the model performance. ([Notebook](colab/22_10kGNAD_simpletransformers_hyperparam_distilbert.ipynb))
-4. Using advanced hyperparameter optimization to further improve the model performance. ([Notebook](colab/23_10kGNAD_simpletransformers_advanced_hyperparam_distilbert.ipynb))
+The notebook can be configured to use any pretrained German language model. It will train a classifier multiple times with the same settings and collect all parameters and evaluation results in a Weigths & Biases project. ([Notebook](colab/21_10kGNAD_simpletransformers_default_distilbert.ipynb))
 
 <div align="center">
-  <img src="images/10kGNAD_simpletrans_distilbert-base-german.png" width="800"><br>
-  <span><a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_base">Training runs with default SimpleTransformers settings and pretrained DistilBERT model.</a></span><br><br>
+  <pre>distilbert-base-german-cased</pre>
+  <img src="images/10kGNAD_simpletrans_distilbert-base-german.png" width="800">
+</div>
+<p>DistilBERT models are smaller and faster than BERT models while still achieving a high accuracy. Thus, they are ideal for quick experiments with different parameters.
+The best DistilBERT model of <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_base">all training runs</a> has an accuracy of <b>89.5%</b>.
+</p>
+</div>
+<div align="center">
+  <pre>deepset/gbert-base</pre>
   <img src="images/10kGNAD_simpletrans_gbert-base.png" width="800"><br>
-  <span><a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_bert_default">Training runs with default SimpleTransformers settings and pretrained BERT model.</a></span><br>
+</div>
+<p>The best BERT model of all <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_bert_default">all training runs</a> has an accuracy of <b>91.0%</b>.
+</p>
+<div align="center">
+  <pre>deepset/gelectra-large</pre>
+  <img src="images/10kGNAD_simpletrans_gelectra-large.png" width="800">
 </div>
 
 
-#### PART II: Comparing Different Pretrained German Transformer Models
+#### PART II: SimpleTransformers with Hyperparameter Optimization
+
+Next, we try to achieve higher model performance by finding the best hyperparater combination. This Notebook uses the sweeps feature of Weights & Biases (and its excellent integration SimpleTransformers) to search for the best value regarding
+* `learning rate`
+* `training epochs`
+* `batch size`
+* `class weights`
+
+([Notebook](colab/22_10kGNAD_simpletransformers_hyperparam_distilbert.ipynb))
+
+
+#### PART III: SimpleTransformers with Advanced Hyperparameter Optimization
+
+([Notebook](colab/23_10kGNAD_simpletransformers_advanced_hyperparam_distilbert.ipynb))
+
+
+#### PART IV: Comparing Different Pretrained German Transformer Models
 
 * Using different pretrained German Language Models and compare their performance. ([Notebook](colab/24_10kGNAD_simpletransformers_compare_pretrained_models.ipynb))
 
-
-#### PART III: BERT
-
-1. Train a basic topic classifier based on a pretrained German Bert language model using the sensible default settings of SimpleTransformers. ([Notebook](colab/25_10kGNAD_simpletransformers_default_bert.ipynb))
 
 ### 2. Using Farm
 
