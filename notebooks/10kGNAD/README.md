@@ -79,30 +79,36 @@ The notebook can be configured to use any pretrained German language model. It w
   <img src="images/10kGNAD_simpletrans_distilbert-base-german.png" width="800">
 </div>
 <p>DistilBERT models are smaller and faster than BERT models while still achieving a high accuracy. Thus, they are ideal for quick experiments with different parameters.
-The best DistilBERT model of <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_base">all training runs</a> has an accuracy of <b>89.5%</b>.
+The best DistilBERT model of <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_base">all training runs</a> has an accuracy of <b>89.5%</b> and f1 of <b>89.2%</b>.
 </p>
 </div>
 <div align="center">
   <pre>deepset/gbert-base</pre>
   <img src="images/10kGNAD_simpletrans_gbert-base.png" width="800"><br>
 </div>
-<p>The best BERT model of all <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_bert_default">all training runs</a> has an accuracy of <b>91.0%</b>.
+<p>The best BERT model of all <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_bert_default">all training runs</a> has an accuracy of <b>91.0%</b> and f1 of <b>90.5%</b>.
 </p>
 <div align="center">
   <pre>deepset/gelectra-large</pre>
   <img src="images/10kGNAD_simpletrans_gelectra-large.png" width="800">
 </div>
+<p>The best Electra model of all <a href="">all training runs</a> has an accuracy of <b>90.4%</b> and f1 of <b>90.0%</b>.
 
 
 #### PART II: SimpleTransformers with Hyperparameter Optimization
 
-Next, we try to achieve higher model performance by finding the best hyperparater combination. This Notebook uses the sweeps feature of Weights & Biases (and its excellent integration SimpleTransformers) to search for the best value regarding
-* `learning rate`
-* `training epochs`
-* `batch size`
-* `class weights`
+Next, we try to achieve higher model performance by finding the best hyperparater combination. This [Notebook](colab/22_10kGNAD_simpletransformers_hyperparam_distilbert.ipynb) uses the sweeps feature of Weights & Biases (and its excellent integration in SimpleTransformers) to search for the best value regarding **learning rate**, **training epochs**, **batch size**, **class weights**
 
-([Notebook](colab/22_10kGNAD_simpletransformers_hyperparam_distilbert.ipynb))
+  
+<div align="center">
+  <pre>distilbert-base-german-cased</pre>
+  <img src="images/10kGNAD_sweep_10kGNAD_simpletrans_distilbert-base-german_cased.png" width="800">
+</div>
+<div align="center">
+  <pre>deepset/gbert-base</pre>
+  <img src="images/10kGNAD_sweep_simpletrans_gbert-base.png" width="800">
+</div>
+<p>The best BERT model of all <a href="">all training runs</a> has an accuracy of <b>91.4%</b> and f1 of <b>91.2%</b>.
 
 
 #### PART III: SimpleTransformers with Advanced Hyperparameter Optimization
