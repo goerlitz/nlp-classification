@@ -102,8 +102,9 @@ Next, we try to achieve higher model performance by finding the best hyperparate
   
 <div align="center">
   <pre>distilbert-base-german-cased</pre>
-  <img src="images/10kGNAD_sweep_10kGNAD_simpletrans_distilbert-base-german_cased.png" width="800">
+  <img src="images/10kGNAD_sweep_simpletrans_distilbert-base-german_cased.png" width="800">
 </div>
+<p>The best DistilBERT model of all <a href="">all training runs</a> has an accuracy of <b>90.4%</b> and f1 of <b>90.1%</b>.
 <div align="center">
   <pre>deepset/gbert-base</pre>
   <img src="images/10kGNAD_sweep_simpletrans_gbert-base.png" width="800">
