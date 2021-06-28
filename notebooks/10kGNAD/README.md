@@ -78,7 +78,7 @@ The notebook can be configured to use any pretrained German language model. It w
   <pre>distilbert-base-german-cased</pre>
   <img src="images/10kGNAD_simpletrans_distilbert-base-german.png" width="800">
 </div>
-<p>DistilBERT models are smaller and faster than BERT models while still achieving a high accuracy. Thus, they are ideal for quick experiments with different parameters.
+<p>DistilBERT models are smaller and faster than BERT models while still achieving a high accuracy. Thus, they are ideal for quick experiments with different parameters. (~2.5 min with Tesla V100-SXM2-16GB)
 The best DistilBERT model of <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_base">all training runs</a> has an accuracy of <b>89.5%</b> and f1 of <b>89.2%</b>.
 </p>
 </div>
@@ -86,13 +86,13 @@ The best DistilBERT model of <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTr
   <pre>deepset/gbert-base</pre>
   <img src="images/10kGNAD_simpletrans_gbert-base.png" width="800"><br>
 </div>
-<p>The best BERT model of all <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_bert_default">all training runs</a> has an accuracy of <b>91.0%</b> and f1 of <b>90.5%</b>.
+<p>The best BERT model of all <a href="https://wandb.ai/goerlitz/10kGNAD_SimpleTransformers_bert_default">all training runs</a> has an accuracy of <b>91.0%</b> and f1 of <b>90.5%</b> (~5.5 min with Tesla P100-PCIE-16GB).
 </p>
 <div align="center">
   <pre>deepset/gelectra-large</pre>
   <img src="images/10kGNAD_simpletrans_gelectra-large.png" width="800">
 </div>
-<p>The best Electra model of all <a href="">all training runs</a> has an accuracy of <b>90.4%</b> and f1 of <b>90.0%</b>.
+<p>The best Electra model of all <a href="">all training runs</a> has an accuracy of <b>90.4%</b> and f1 of <b>90.0%</b> (~13.5 min with Tesla V100-SXM2-16GB).
 
 
 #### PART II: SimpleTransformers with Hyperparameter Optimization
