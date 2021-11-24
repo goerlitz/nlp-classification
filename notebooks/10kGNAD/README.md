@@ -29,8 +29,8 @@ We will be using the [Ten Thousand German Newspaper Article Dataset](https://tbl
 1. Create Virtual Environment
 
 ```console
-foo@bar:~$ python3 -m venv venv
-foo@bar:~$ source venv/bin/activate
+foo@bar:~$ python3 -m venv .venv
+foo@bar:~$ source .venv/bin/activate
 foo@bar:~$ pip install --upgrade -r requirements.txt
 ```
 
