@@ -72,7 +72,7 @@ SimpleTransformers is an great library which wraps around the excellent HuggingF
 
 The SimpleTransformers implementation comes with sensible default settings for hyperparameters like *learning rate*. Hence, we can quickly implement and train a classifier with good performance without the need to search for recommended parameter settings for each used model.
 
-The notebook can be configured to use any pretrained German language model. It will train a classifier multiple times with the same settings and collect all parameters and evaluation results in a Weigths & Biases project. ([Notebook](colab/21_10kGNAD_simpletransformers_default_distilbert.ipynb))
+The notebook can be configured to use any pretrained German language model. It will train a classifier multiple times with the same settings and collect all parameters and evaluation results in a Weigths & Biases project. ([Notebook](colab/20_10kGNAD_simpletransformers_basic.ipynb))
 
 <div align="center">
   <pre>distilbert-base-german-cased</pre>
@@ -131,7 +131,7 @@ Farm is another library that simplifies training of Transformer models by wrappi
 
 ### 3. Using Vanilla HuggingFace
 
-* Train a topic classifier with a default Hugginface Transformer setup (pretrained German BERT model) ([Notebook](colab/23_default_huggingface_classifier.ipynb))
+* Train a topic classifier with a default Hugginface Transformer setup (pretrained German BERT model) ([Notebook](colab/21_10kGNAD_huggingface_basic.ipynb))
 
 
 ### Using FastAI (ULMFit)
