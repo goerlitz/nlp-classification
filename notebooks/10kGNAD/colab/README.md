@@ -14,7 +14,7 @@ Note that all implementations need GPU support. Therefore, the notebooks are bes
 
 Tokenization is an important preprocessing step with impact on the overall model performance. Hence, different tokenizers are being used by the Transformer models.
 
-* Compare tokenization of different pretrained German Transformer models ([Notebook](colab/10_transformer_tokenization.ipynb))
+* Compare tokenization of different pretrained German Transformer models ([Notebook](10_transformer_tokenization.ipynb))
 
 
 # PART II - Basic Models
@@ -23,8 +23,8 @@ Tokenization is an important preprocessing step with impact on the overall model
 
 These examples focus on the basic setup and training of a Transformer-based classification model, with no optimization and using mostly default settings.
 
-* Using SimpleTransformers ([Notebook](colab/20_10kGNAD_simpletransformers_basic.ipynb))
-* Using Huggingface Trainer ([Notebook](colab/21_10kGNAD_huggingface_basic.ipynb))
+* Using SimpleTransformers ([Notebook](20_10kGNAD_simpletransformers_basic.ipynb))
+* Using Huggingface Trainer ([Notebook](21_10kGNAD_huggingface_basic.ipynb))
 * Using Farm (TODO)
 
 ## Performance Comparison of Basic Models
