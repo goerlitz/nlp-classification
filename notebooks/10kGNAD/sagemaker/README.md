@@ -4,6 +4,7 @@
 
 https://aws.amazon.com/sagemaker/pricing/
 
+| instance | vCPU | Mem | price |
 |-----------------|----|-------|-------|
 | ml.p3.2xlarge |	8|	61 GiB|	$3.825|
 | ml.p3.8xlarge |	32|	244 GiB|	$14.688|
