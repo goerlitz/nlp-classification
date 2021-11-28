@@ -2,6 +2,8 @@
 
 ## GPU Pricing
 
+Recommended GPU instances: G3, G4, P3, P4
+https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html
 https://aws.amazon.com/sagemaker/pricing/
 
 |-----------------|----|-------|-------|
@@ -15,3 +17,12 @@ https://aws.amazon.com/sagemaker/pricing/
 | ml.g4dn.8xlarge |	32|	128 GiB|	$2.72|
 | ml.g4dn.12xlarge |	48|	192 GiB|	$4.89|
 | ml.g4dn.16xlarge |	64|	256 GiB|	$5.44|
+
+https://stackoverflow.com/questions/60868257/aws-sagemaker-on-gpu
+-> p2.xlarge (NVIDIA K80) or p3.2xlarge (NVIDIA V100)
+
+ResourceLimitExceeded: An error occurred (ResourceLimitExceeded) when calling the CreateTrainingJob operation: The account-level service limit 'ml.g4dn.2xlarge for training job usage' is 0 Instances, with current utilization of 0 Instances and a request delta of 1 Instances. Please contact AWS support to request an increase for this limit.
+
+->
+* https://aws.amazon.com/premiumsupport/knowledge-center/resourcelimitexceeded-sagemaker/
+* https://docs.aws.amazon.com/general/latest/gr/sagemaker.html#limits_sagemaker
