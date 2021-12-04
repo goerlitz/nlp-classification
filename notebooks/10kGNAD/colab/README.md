@@ -25,7 +25,11 @@ These examples focus on the basic setup and training of a Transformer-based clas
 
 * Using SimpleTransformers ([Notebook](20_10kGNAD_simpletransformers_basic.ipynb))
 * Using Huggingface Trainer ([Notebook](21_10kGNAD_huggingface_basic.ipynb))
-* Using Farm (TODO)
+* Using DeepSet Farm/Haystack ([Notebook](22_10kGNAD_deepset_farm_haystack_basic.ipynb))
+
+TODO
+* FP16
+* TPU
 
 ## Performance Comparison of Basic Models
 
@@ -34,6 +38,8 @@ These examples focus on the basic setup and training of a Transformer-based clas
 
 ## Hyperparameter Tuning
 
+* Using SimpleTransformers with *Weights & Biases Sweeps* ([Notebook](40_10kGNAD_simpletransformers_hyperparam_wandb.ipynb))
+* Using HuggingFace Trainer with *Optuna Trials* ([Notebook]())
 
 ## Performance Comparison of Optimized Models
 
