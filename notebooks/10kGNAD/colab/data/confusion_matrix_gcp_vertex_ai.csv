@@ -1,10 +1,10 @@
-True label/Predicted label,Web,Inland,International,Etat,Wirtschaft,Sport,Wissenschaft,Kultur,Panorama
-Web,166,1,2,,7,,1,2,3
-Inland,1,77,,,9,,2,1,6
-International,2,,125,,3,,,1,7
-Etat,3,1,3,46,,1,,5,1
-Wirtschaft,8,2,5,,122,1,1,1,7
-Sport,,,,,,113,,,1
-Wissenschaft,3,,1,1,,,54,,1
-Kultur,,3,1,1,2,,,44,
-Panorama,,12,12,,3,1,4,1,146
+True label/Predicted label,Sport,Wirtschaft,Panorama,International,Etat,Wissenschaft,Web,Kultur,Inland
+Sport,116,1,2,,,,1,,
+Wirtschaft,,120,4,4,,,5,,8
+Panorama,,7,140,6,1,2,2,2,8
+International,1,3,14,127,2,1,1,,2
+Etat,,1,2,2,56,,3,1,2
+Wissenschaft,,1,1,1,,54,,,
+Web,1,4,2,2,1,1,155,2,
+Kultur,,,1,,2,,3,48,
+Inland,,6,6,3,1,3,,2,81
